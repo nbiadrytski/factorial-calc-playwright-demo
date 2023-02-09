@@ -1,0 +1,27 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "node": true
+  },
+  "extends": ["plugin:prettier/recommended"],
+  "plugins": ["prettier", "unused-imports"],
+  "overrides": [
+    {
+      "extends": ["plugin:@typescript-eslint/recommended"],
+      "files": ["*.ts"],
+      "rules": {
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/explicit-function-return-type": 2,
+        "no-unreachable": "error"
+      }
+    }
+  ],
+  "rules": {
+    "class-methods-use-this": "off",
+    "prettier/prettier": ["error", { "trailingComma": "all", "printWidth": 120 }],
+    "no-use-before-define": ["warn", { "functions": true }],
+    "require-await": 2,
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": "error"
+  }
+}

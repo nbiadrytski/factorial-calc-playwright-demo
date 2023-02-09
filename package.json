@@ -1,0 +1,30 @@
+{
+  "name": "factorial-calc-playwright-demo",
+  "version": "1.0.0",
+  "description": "Testing of Factorial calculator app with Playwright",
+  "scripts": {
+    "chromium": "playwright test --project=chromium",
+    "all": "playwright test",
+    "lint": "node_modules/.bin/eslint . --ext .ts"
+  },
+  "keywords": [],
+  "author": "Mikalai Biadrytski",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.30.0",
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.8.4"
+  },
+  "dependencies": {
+    "typescript": "^4.9.5",
+    "winston": "^3.8.2"
+  }
+}
